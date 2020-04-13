@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if
-  [[ -e /etc/openvpn/server/server.conf ]]
+  [[ ! -e /etc/openvpn/server/server.conf ]]
 then
   cat << EOF > defaults && wget https://git.io/vpn -O openvpn-install.sh \
     && sudo bash openvpn-install.sh < defaults && rm defaults
