@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if
   [[ -e /etc/openvpn/server/server.conf ]]
